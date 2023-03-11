@@ -4,7 +4,7 @@ to: <%= abs_path %>/<%=name%>.stories.tsx
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import React from "react";
 
-import { <%= name %> } from "./index";
+import { <%= name %> } from "./<%= name %>";
 
 export default {
   title: "<%= path %>",

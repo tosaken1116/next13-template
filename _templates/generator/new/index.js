@@ -21,7 +21,7 @@ module.exports = {
             const { name, dir, have_props } = answers;
             const path = `${dir ? `${dir}/` : ``}${name}`;
             const abs_path = `src/components/${path}`;
-            const alias_path = `@/components/${path}`;
+            const alias_path = `./${path}`;
             const lower_name = name.toLowerCase();
             return { ...answers, path, abs_path, alias_path, lower_name };
         });
